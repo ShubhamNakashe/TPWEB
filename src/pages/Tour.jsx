@@ -1,7 +1,13 @@
-import React from "react";
+import React from 'react'
+import SearchBar from '../shared/SearchBar'
 
-const tour = () => {
-  return <div>tour</div>;
-};
+function Tour() {
+  return (
+    <div>
+      <SearchBar/>
+    </div>
+  )
+}
 
-export default tour;
+export default Tour
+

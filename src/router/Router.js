@@ -6,6 +6,7 @@ import TourDetails from "../pages/TourDetails";
 import Login from "../pages/Login";
 import Register from "./../pages/Register";
 import SearchResultList from "./../pages/SearchResultList";
+import SearchBar from "../shared/SearchBar";
 
 const Router = () => {
   return (
@@ -17,6 +18,8 @@ const Router = () => {
       <Route path="/Login" element={<Login />} />
       <Route path="/Register" element={<Register />} />
       <Route path="/tour/search" element={<SearchResultList />} />
+      <Route path="/tours" element={<SearchBar/>} />
+
     </Routes>
   );
 };
