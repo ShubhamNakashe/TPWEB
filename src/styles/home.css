@@ -1,0 +1,49 @@
+/* home.css */
+
+/* Define the animation */
+@keyframes rotateRightToLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+/* Apply the animation to the image */
+.rotate-360 {
+  margin-top: -7rem;
+  animation: rotateRightToLeft 4s linear infinite; /* Adjust the duration and timing as needed */
+}
+
+.hero__content h1{
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+  color: var(--heading-color);
+}
+.hero__content h1 .highlight{
+  color: var(--secondary-color);
+}
+.hero__content p{
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 2rem;
+}
+
+.hero__img-box img, .hero__img-box video{
+width: 100%;
+height: 350px;
+border-radius: 20px;
+border-radius:20px ;
+border: 1px solid var(--secondary-color);
+object-fit: cover;
+display: flex;
+}
+.hero__content{
+  padding-top: 3.5rem;
+}
+.hero__img-box{
+  padding-top: 2px;
+}
