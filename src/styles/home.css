@@ -1,19 +1,19 @@
-/* home.css */
-
-/* Define the animation */
-@keyframes rotateRightToLeft {
+/* @keyframes rotateRightToLeft {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(720deg);
   }
-}
+} */
 
 /* Apply the animation to the image */
 .rotate-360 {
+  padding: 50px;
+ width: 300px;
+ height: 300px;
   margin-top: -7rem;
-  animation: rotateRightToLeft 4s linear infinite; /* Adjust the duration and timing as needed */
+  animation: rotateRightToLeft 3s linear infinite; /* Adjust the duration and timing as needed */
 }
 
 .hero__content h1{
@@ -47,3 +47,31 @@ display: flex;
 .hero__img-box{
   padding-top: 2px;
 }
+
+.hero__content .go_To_Tour_btn {
+  display: inline-block; 
+  background: var(--secondary-color) !important;
+  color: #fff; 
+  border: none !important;
+  border-radius: 50px !important;
+  padding: 0.8rem 1.5rem !important;
+  font-size: 20px;
+  font-weight: 500px; 
+  font-family: 'Geologica', sans-serif;
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+
+}
+
+/* Adjust the text size and color of the button link */
+.hero__content .go_To_Tour_btn a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero__content .go_To_Tour_btn a:hover {
+  color: inherit;
+}
+
+/* ... */

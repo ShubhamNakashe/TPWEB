@@ -16,3 +16,22 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
+// const express = require("express");
+// const cors = require("cors");
+// const bodyParser = require("body-parser");
+// const dotenv = require("dotenv");
+// const chatroutes = require("./Routes/chatroutes");
+
+
+// const app = express();
+// app.use(cors());
+// app.use(bodyParser.json());
+
+// dotenv.config()
+
+// app.use("/",chatroutes);
+// const port = process.env.port || 1010;
+
+// app.listen(port,()=>{
+//     console.log(`Server ${port}`);
+// })
