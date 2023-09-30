@@ -1,12 +1,15 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col,Button } from "reactstrap";
 import heroimg from "../assets/images/hero-img01.jpg";
 import heroImg02 from "../assets/images/hero-img02.jpg";
 import heroVideo from "../assets/images/hero-video.mp4";
+import pruthvi from '../assets/images/pruthvi.gif';
 // import Subtitle from "../shared/Subtitle";
 import Subtitle from "./../shared/Subtitle";
 import worldImg from "./../assets/images/world.png";
 import './../styles/home.css'
+import { NavLink, Link } from "react-router-dom";
+import Tour from '../pages/Tour';
 // import SearchBar from "../shared/SearchBar"; 
 const home = () => {
   return (
@@ -19,7 +22,7 @@ const home = () => {
               <div className="hero__content">
                 <div className="hero__subtitle d-flex align-items-center">
                   <Subtitle subtitle={"Know before you go"} />
-                  <img src={worldImg} alt="" className="rotate-360"/>
+                  <img src={pruthvi} alt="" className="rotate-360"/>
                 </div>
                 <h1>
                   Traveling opens the door to creating{" "}
@@ -27,7 +30,11 @@ const home = () => {
                 </h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                   Accusantium amet sint laudantium possimus veniam maxime
-                   deserunt ab, facere fugit assumenda?</p>
+                   deserunt ab, facere fugit assumenda?  </p>
+               <Button className="go_To_Tour_btn">
+                  <Link to="/Tour">Get Started</Link>
+                </Button>
+              
               </div>
             </Col>
              <Col lg='2'>
